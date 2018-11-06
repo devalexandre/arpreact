@@ -12,7 +12,7 @@ class App extends Component {
 					</a-assets>
 					<a-marker preset='hiro'>
 				
-					<a-video src="#video" ></a-video>
+					<a-video src="#video" width="16" height="9" position="0 0 -20"></a-video>
 					</a-marker>
 					<a-entity camera></a-entity>
 				</a-scene>
