@@ -1,6 +1,6 @@
 import './style';
 import { h,Component,render } from 'preact';
-import heart from './assets/heart.jpeg'
+
  
 class App extends Component {
 
@@ -8,12 +8,11 @@ class App extends Component {
 		return (
 			<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; ' >
 						<a-assets>
-					<img src={heart} id="heart" />
+					<video src="./assets/Sobre_os_jovens_se_manifestarem.mp4" id="video" autoplay loop="true" webkit-playinline/>
 					</a-assets>
 					<a-marker preset='hiro'>
 				
-					<a-image src="#heart" width="2" height="2" position='0 0.5 0' rotation="-90 0 0 " text="value: Maby My Love; color:#000; align: center"></a-image>
-        
+					<a-video src="#video" ></a-video>
 					</a-marker>
 					<a-entity camera></a-entity>
 				</a-scene>
