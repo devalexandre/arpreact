@@ -7,15 +7,7 @@
 		<meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
    
-        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-        <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
-        <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-        <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
-        <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-    
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
-      <script>TREEx.ArToolkitContext.baseURL = 'https://raw.githubusercontent.com/devalexandre/AR.js/master/three.js/build/ar.min.js' </script>
-      
+
 		<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
 		<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
 			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
@@ -31,9 +23,12 @@
 			<% } %>
         <% } %>
 
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+        <script>TREEx.ArToolkitContext.baseURL = 'https://raw.githubusercontent.com/devalexandre/AR.js/master/three.js/build/ar.min.js' </script>
 
 	</head>
-	<body style='margin : 0px; overflow: hidden;'>
+	<body style='margin : 0px; overflow: hidden;' height="100%">
 		<%= htmlWebpackPlugin.options.ssr({
 			url: '/'
 		}) %>
