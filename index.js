@@ -1,6 +1,6 @@
 import './style';
 import { h,Component,render } from 'preact';
-
+import heart from './assets/heart.jpeg'
  
 class App extends Component {
 
@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; ' >
 						<a-assets>
-					<img src="./assets/heart.jpeg" id="heart" />
+					<img src={heart} id="heart" />
 					</a-assets>
 					<a-marker preset='hiro'>
 				
