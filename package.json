@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --template index.html",
+    "build": "preact build --template index.html --no-prerender",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
     "lint": "eslint src"
@@ -23,9 +23,6 @@
     "preact-cli": "^2.0.0"
   },
   "dependencies": {
-    "aframe": "^0.8.2",
-    "aframe-ar": "^0.2.1-a",
-    "aframe-react": "^4.4.0",
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "react-aframe-ar": "^1.18.0"
