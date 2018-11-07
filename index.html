@@ -9,8 +9,8 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
    
 		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-
-		<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
+		<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+        <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
 		<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
 			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
 		<% } %>
@@ -27,7 +27,7 @@
 
   
 	</head>
-    <body>
+    <body style='margin : 0px; overflow: hidden;'>
         
        
 		<%= htmlWebpackPlugin.options.ssr({
