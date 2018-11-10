@@ -9,8 +9,14 @@ class App extends Component {
 		return (
 			
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+<a-assets>
+    <a-asset-item id="cake" src="./assets/produtos/cake.glb"></a-asset-item>
+  </a-assets>
+
+
     <a-marker type="pattern" url="./assets/marker.patt">
-      <a-box position='0 0 0' material='opacity: 0.5; side:double; color:green;'></a-box>
+	<a-entity gltf-model="#cake" position='0 0 0'></a-entity>
+    
     </a-marker>
     <a-camera-static/>
 </a-scene>
