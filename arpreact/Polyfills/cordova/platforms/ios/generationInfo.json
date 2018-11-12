@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder",
+    "generationToolVersion": "2.0.3-rc.0",
+    "platformId": "cordova",
+    "platformPackage": "pwabuilder-cordova",
+    "platformVersion": "2.0.0-rc.1",
+    "generatedFrom": "CLI",
+    "generationDate": "2018-11-11 20:57:55 Z",
+    "generatedURL": "https://ar-preact.netlify.com/manifest.json"
+}

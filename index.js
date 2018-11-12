@@ -31,7 +31,7 @@ class App extends Component {
 			
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-<a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"></a-entity>
+<a-entity id="camera" look-controls cursor="rayOrigin: mouse"></a-entity>
 
   <a-assets>
     <img id="next" src="./assets/next.png"/>

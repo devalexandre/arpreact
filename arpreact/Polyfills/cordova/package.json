@@ -1,0 +1,13 @@
+{
+  "name": "com.netlify.arpreact",
+  "version": "0.0.1",
+  "displayName": "arpreact",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "~7.1.2"
+  }
+}
